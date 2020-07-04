@@ -1,0 +1,1 @@
+"D:\Blender 2.82A\blender.exe" --background --python "D:\GitHubKraken\Clone\sturdy-octo-adventure\Assets\Script\entoforms.py"
