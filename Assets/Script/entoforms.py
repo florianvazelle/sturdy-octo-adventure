@@ -439,6 +439,12 @@ class Scene:
 
     @staticmethod
     def export():
+        bpy.ops.object.select_all(action='DESELECT')
+        bpy.data.objects['Camera'].select_set(True)
+        bpy.ops.object.delete()
+        bpy.ops.object.select_all(action='DESELECT')
+        bpy.data.objects['Light'].select_set(True)
+        bpy.ops.object.delete()
         bpy.ops.export_scene.fbx(filepath="D:/GitHubKraken/Clone/sturdy-octo-adventure/Assets/Monster.fbx")
 
 ########################
